@@ -21,17 +21,18 @@ class BonjourController extends Controller
 
     //cmd> php artisan make:controller
     // BonjourController
-    function bonjourGender($ggg, $nom)
+    function bonjourGender($g, $nom)
     {
-        if($ggg == "h"){
+        if ($g == "h") {
             $gender = "monsieur";
-        }elseif($ggg == "f"){
+        } elseif ($g == "f") {
             $gender = "madame";
-        }else{
+        } else {
             $gender = "";
         }
         return view(
-            'bonjour', compact(
+            'bonjour',
+            compact(
                 "gender",
                 "nom"
             )

@@ -11,7 +11,7 @@ Route::get('/', function () {
 })->name("welcome");
 
 // localhost:8000/bonjour
-Route::get('/bonjour', [BonjourController::class, "bonjourVide"])
+Route::get('/hello', [BonjourController::class, "bonjourVide"])
     ->name("bjr");
 
 // use App\Http\Controllers\BonjourController;
