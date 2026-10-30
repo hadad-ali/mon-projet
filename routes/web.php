@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BonjourController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 // MVC: Model(BD) View Controller
@@ -33,6 +34,9 @@ Route::get(
 Route::get('/about-us', function () {
     return view('about');
 })->name("abt");
+
+
+Route::get("/users", [UserController::class, "afficherList"]);
 
 // github desktop (software )
 // creer repo : projet laravel
