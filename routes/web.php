@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BonjourController;
+use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -37,6 +38,8 @@ Route::get('/about-us', function () {
 
 
 Route::get("/users", [UserController::class, "afficherList"]);
+
+Route::get('/products',[ProductsController::class,"afficherList"]);
 
 // github desktop (software )
 // creer repo : projet laravel

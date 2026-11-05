@@ -6,3 +6,6 @@ php artisan db:seed
 php artisan make:controller UserController
 
 php artisan make:migration create_products_table
+
+php artisan make:model Product
+php artisan make:controller ProductsController
