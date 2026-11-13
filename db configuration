@@ -1,0 +1,12 @@
+
+machine
+1- server db local (ex wamp , xamp , mysql...)
+2- wamp( php8.3 , appache,mysql )
+3- PhpMyAdmin(optionel) => visualiser les bd
+
+projet
+1- .env ( données de connexion ....)
+2- migration : changement bd ( creation de la table products)
+3- seeder : inserer des données fake dans une table ex
+4- model ex: Product(products)  User(users)
+5- $users = User::all()
