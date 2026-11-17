@@ -3,13 +3,23 @@
 namespace App\Http\Controllers;
 
 use App\Models\Product;
-use Illuminate\Http\Request;
 
 class ProductsController extends Controller
 {
-    function afficherList(){
+    public function afficherList()
+    {
+        // recuperer data
         $prods = Product::all();
+
+        // envoyer data à la vue
         return view('products.list',
-        compact('prods'));
+            compact('prods'));
+    }
+
+    public function afficherDetail($id)
+    {
+        $p = Product::findOrFail($id);
+
+        return view('products.detail', compact('p'));
     }
 }

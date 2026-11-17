@@ -5,8 +5,11 @@ machine
 3- PhpMyAdmin(optionel) => visualiser les bd
 
 projet
-1- .env ( données de connexion ....)
-2- migration : changement bd ( creation de la table products)
-3- seeder : inserer des données fake dans une table ex
-4- model ex: Product(products)  User(users)
-5- $users = User::all()
+1- .env ( données de connexion mysql root pass 3306....)
+2- migration : changement structure bd ( creation de la table products )
+php artisan migrate
+3- seeder et factory : inserer 50 products ( des données fake )  dans une table ex
+4- model ex: Product(table bd => products)  User(users)
+
+
+ Product::all()
