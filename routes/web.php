@@ -41,10 +41,8 @@ Route::get("/users", [UserController::class, "afficherList"]);
 
 Route::get('/products',[ProductsController::class,"afficherList"]);
 
-// product/2
 Route::get('/product/{id}',[ProductsController::class,"afficherDetail"]);
 
-// github desktop (software )
-// creer repo : projet laravel
-
-
+// afficher le formulaire d'ajout
+Route::get('/products/create',[ProductsController::class,"create"]);
+Route::post('/store',[ProductsController::class,"store"]);
